@@ -1,0 +1,42 @@
+@mixin button($bg-color, $text-color, $border: none) { 
+  background-color: $bg-color;  
+  color: $text-color;  
+  border: $border;  
+  padding: 12px 25px;
+  border-radius: var(--border-radius);  
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color:var(--dark-emerald);  
+  }
+}
+
+.btn-primary {
+  @include button(var(--emerald), var(--white));
+  
+  &:hover {
+    background-color: var(--dark-emerald);
+  }
+}
+
+.btn-secondary {
+  @include button(transparent, var(--emerald), 2px solid var(--emerald));
+  
+  &:hover {
+    background-color: var(--emerald);
+    color: var(--white);
+  }
+}
+
+.badge {
+  display: inline-block;
+  background-color: var(--green);
+  color: var(--black);
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-left: 5px;
+  font-weight: 600;
+}

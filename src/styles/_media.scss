@@ -1,0 +1,68 @@
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@include tablet {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pricing-card {
+    max-width: 100%;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .demo-container {
+    flex-direction: column;
+  }
+  
+  .contact-content {
+    flex-direction: column;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+}
+
+@include mobile {
+  header .container {
+    flex-direction: column;
+  }
+  
+  nav ul {
+    margin: var(--spacing-sm 0);
+  }
+  
+  .header-contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .phone {
+    margin-right: 0;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .advantages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+}

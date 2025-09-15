@@ -1,0 +1,24 @@
+.hero {
+  background: linear-gradient(to right, var(--emerald, #0a565f));
+  color: var(--white);
+  text-align: center;
+  padding: 150px 0 100px;
+  margin-top: var(header-height);
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-lg);
+  }
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}

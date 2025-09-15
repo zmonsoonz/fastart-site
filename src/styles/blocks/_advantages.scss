@@ -1,0 +1,38 @@
+@mixin grid($columns, $gap: 20px) { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--columns), 1fr));  
+  gap: var(--gap);  
+}
+
+.advantages {
+  background-color: var(--light-gray); 
+}
+
+.advantage-category {
+  margin-bottom: 50px;
+}
+
+.category-description {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: var(--spacing-lg); 
+  color: var(--emerald); 
+  font-weight: 500;
+}
+
+.advantages-grid {
+  @include grid(300px, 20px); 
+  margin-top: var(--spacing-md); 
+}
+
+.advantage-item {
+  background-color: var(--white); 
+  padding: var(--spacing-md); 
+  border-radius: 8px;
+  box-shadow: var(--shadow-medium); 
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
