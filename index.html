@@ -9,28 +9,37 @@
     <!-- Шапка сайта -->
     <header>
         <div class="container">
-            <div class="logo">Fastart</div>
-            <nav>
+            <div class="logo"><a href="#">Fastart</a></div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav">
                 <ul>
                     <li><a href="#advantages">Преимущества</a></li>
                     <li><a href="#demo">Пример работы</a></li>
                     <li><a href="#pricing">Тарифы</a></li>
                     <li><a href="#contact">Контакты</a></li>
                 </ul>
+                <div class="mobile-menu-button">
+                    <button class="btn-primary"><a target="_blank" href='https://fastart-product.my.canva.site'>Открыть презентацию</a></button>
+                </div>
             </nav>
             <div class="header-contact">
-                <button class="btn-primary">Открыть презентацию</button>
+                <button class="btn-primary"><a target="_blank" href='https://fastart-product.my.canva.site'>Открыть презентацию</a></button>
             </div>
         </div>
     </header>
+    <div class="overlay" id="overlay"></div>
 
     <!-- Герой-секция -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="container">
-            <h1>Лёгкий и мощный инструмент для кафе и ресторанов</h1>
-            <p>Продажи, доставка, лояльность — всё под контролем, без лишних сложностей</p>
+            <h1>Лёгкий и мощный инструмент <span class="emerald">для кафе и ресторанов</span></h1>
+            <p class="hero-desc">Продажи, доставка, лояльность — всё под контролем, без лишних сложностей</p>
             <div class="hero-buttons">
-                <button class="btn-secondary">Открыть демо</button>
+                <button class="btn-secondary"><a target="_blank" href="https://shaurma-jan.ru/">Открыть демо</a></button>
             </div>
         </div>
     </section>
@@ -162,16 +171,22 @@
     </section>
 
     <!-- Демо-секция -->
-    <section id="demo" class="demo">
+    <section class="demo" id="demo">
         <div class="container">
             <h2>Как это работает</h2>
             <div class="demo-container">
                 <div class="demo-description">
                     <p>Оцените удобство решения на примере демо-версии. Вы можете сделать тестовый заказ и посмотреть, как это будет выглядеть для ваших клиентов.</p>
-                    <button class="btn-primary">Открыть демо</button>
+                    <button class="btn-primary"><a target="_blank" href="https://shaurma-jan.ru/">Открыть демо</a></button>
                 </div>
                 <div class="demo-preview">
-                    <img src="main.png" alt="Демо-версия Fastart">
+                    <div class="demo-phone">
+                        <div class="demo-screen">
+                            <img src="images/main.png" alt="Главная страница" class="active" id="img1">
+                            <img src="images/product-card.png" alt="Карточка товара" id="img2">
+                            <img src="images/order.png" alt="Заказ" id="img3">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -271,7 +286,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="logo-white.svg" alt="Fastart">
+                    <h3 class="footer-title">Fastart</h3>
                     <p>Цифровые решения для вашего бизнеса</p>
                 </div>
                 <div class="footer-links">
@@ -290,7 +305,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2023 Fastart. Все права защищены.</p>
+                <p>© 2025 Fastart. Все права защищены.</p>
             </div>
         </div>
     </footer>
