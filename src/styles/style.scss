@@ -349,6 +349,20 @@ nav {
     position: relative;
     overflow: hidden;
     user-select: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+.advantage-item i {
+    font-size: 1.5rem;
+    color: #89E798;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.advantage-category h3 i {
+    margin-right: 10px;
+    color: #094850;
 }
 
 .advantage-item:before {
@@ -576,10 +590,14 @@ nav {
 
 .pricing-subtitle {
     text-align: center;
-    font-size: 1.2rem;
-    color: #666;
+    font-size: 1.3rem;
+    color: #094850;
     margin-bottom: 60px;
-    font-weight: 500;
+    font-weight: 600;
+    padding: 15px 30px;
+    background-color: #e8f5e9;
+    border: 2px solid #89E798;
+    border-radius: 10px;
 }
 
 .pricing-cards {
@@ -1156,18 +1174,26 @@ menu-toggle {
     }
     
     .advantages h2, .demo h2, .pricing h2, .contact h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-bottom: 40px;
     }
     
     .advantage-category {
         padding: 20px;
     }
+    .advantage-category h3 {
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+    .advantage-category h3:before {
+        display: none;
+    }
     
     .advantages-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .hero {
         padding: 80px 0;
         text-align: center;
@@ -1184,14 +1210,8 @@ menu-toggle {
     .hero-buttons {
         justify-content: center;
     }
-    .advantage-category h3:before {
-        content: '';
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        background-color: #89E798;
-        border-radius: 50%;
-        margin-right: 6px;
+    .pricing-subtitle {
+        margin-bottom: 40px;
     }
     .demo h2 {
         font-size: 2rem;
@@ -1263,6 +1283,7 @@ menu-toggle {
     
     .pricing-subtitle {
         font-size: 1.1rem;
+        margin-bottom: 20px;
     }
     
     .pricing-card {
